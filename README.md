@@ -1,25 +1,34 @@
-# Nix templates
+# Python Nix flake template
 
-Bootstrap reproducible development environments using Nix
+Bootstrap a reproducible development environments using Nix for Python.
 
 ## Requirements
 
 Nix with "flake" feature enabled.
 
-## How to use
+## Setup
 
 Use the `nix init` command with option `-t` to specify the template location using a [Flake reference](https://nixos.org/manual/nix/stable/command-ref/new-cli/nix3-flake.html#flake-references).
 
-For example:
-
 ```bash
-nix init github:tweag/nix-templates#pyspark
+nix init github:tweag/python-nix-flake-template#python-env
 ```
 
-will setup the [`./pyspark`](./pyspark) template in the current working directory.
+will setup the [`./python-env`](./python-env) template in the current working directory.
 
-### How to list the templates
+Call at least once
 
 ```bash
-nix flake show github:tweag/nix-templates
+nix develop
 ```
+
+to create the virtual environment.
+
+## How to use
+
+```bash
+nix develop
+```
+
+in your project that has been created using the above procedure.
+
