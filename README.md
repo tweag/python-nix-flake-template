@@ -8,13 +8,13 @@ Nix with "flake" feature enabled.
 
 ## Setup
 
-Use the `nix init` command with option `-t` to specify the template location using a [Flake reference](https://nixos.org/manual/nix/stable/command-ref/new-cli/nix3-flake.html#flake-references).
+Use the `nix flake new` or `nix flake init` command with option `-t` to specify the template location using a [Flake reference](https://nixos.org/manual/nix/stable/command-ref/new-cli/nix3-flake.html#flake-references).
 
 ```bash
-nix flake init -t github:tweag/python-nix-flake-template
+nix flake new my-project -t github:tweag/python-nix-flake-template
 ```
 
-will setup the [`./python-env`](./python-env) template in the current working directory.
+will setup the [`./python-env`](./python-env) template in the new folder `my-project`.
 
 Call at least once
 
