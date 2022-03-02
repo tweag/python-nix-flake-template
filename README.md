@@ -1,6 +1,6 @@
 # Python Nix flake template
 
-Bootstrap a reproducible development environments using Nix for Python.
+Bootstrap a reproducible development environments using Nix for Python, while being able to use a virtual env for fast prototyping.
 
 ## Requirements
 
